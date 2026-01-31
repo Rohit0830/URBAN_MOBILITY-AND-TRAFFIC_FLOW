@@ -1,12 +1,12 @@
 # GitHub Copilot / AI Agent Instructions for Urban Mobility & Traffic Flow 🔧
 
 ## Purpose
-Provide concise, actionable guidance so an AI coding agent can be immediately productive in this repo: discover data layout, run experiments, and add reproducible analysis or examples without changing the project's goals (interpretable EDA and dashboard-ready metrics).
+This repository is a **self-learning** resource focused on *basic data analysis and exploratory data analysis (EDA)*. Aim for short, readable notebooks and simple, reproducible examples that learners can run locally without advanced infrastructure.
 
 ## Quick TL;DR ✅
-- Primary work is data analysis (Python + Jupyter) and Power BI dashboards (external). See `README.md` for project objective.  
-- Large raw data files live in `dataset/` but may not be checked in (e.g., `US_Accidents_March23.csv` is external). Use `dataset/DATASET_DESCRIPTION.md` for schemas and tips.  
-- Use sampled subsets for quick experiments (`pd.read_csv(..., nrows=...)` or `sample()` a large file).
+- Project focus: basic EDA using Python/Jupyter — keep examples simple, well-commented, and beginner-friendly. Prefer `dataset/sampled_probe.csv` for fast iteration.  
+- Large raw data files live in `dataset/` but may not be checked in (e.g., `US_Accidents_March23.csv`); use `dataset/DATASET_DESCRIPTION.md` for schema hints and sample instead of loading full files when learning.  
+- Use memory-conscious patterns (`usecols`, `dtype`, `chunksize`) only when working with full datasets; for learning and quick runs, sampling or `nrows` is fine.
 
 ## Files & Key Locations 🔎
 - `README.md`, `Idea.md`, `Research.md` — project goals, methodology, and scope.  
