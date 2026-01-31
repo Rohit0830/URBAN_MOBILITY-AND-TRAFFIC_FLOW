@@ -1,0 +1,7 @@
+# Development and linting / formatting tools
+black
+isort
+flake8
+pre-commit
+pytest
+mypy

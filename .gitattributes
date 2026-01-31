@@ -1,0 +1,17 @@
+# Ensure consistent EOL for text files
+* text=auto eol=lf
+
+# CSVs are text but can be large; mark to avoid CRLF issues
+*.csv text eol=lf
+
+# Keep Jupyter notebooks diff-friendly (requires git config and jupyter nbextension if needed)
+*.ipynb filter=jupyter
+
+# Binary files should be treated as binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.zip binary
+
+# Mark large datasets for LFS if you plan to use it (uncomment if using git-lfs)
+# dataset/*.csv filter=lfs diff=lfs merge=lfs -text
