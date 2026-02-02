@@ -43,3 +43,8 @@ dist/
 # Keep docs and small sample CSVs in the repo
 !/dataset/*.md
 !/dataset/sampled_*.csv
+# Explicitly ignore cleaned/generated data and common large formats
+/dataset/cleand-data/
+/dataset/*.parquet
+# If you want to track a specific generated file, add a negation rule here, e.g.:
+# !/dataset/some_small_file_you_want_to_track.csv
